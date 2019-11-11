@@ -4,17 +4,21 @@ Challenge Instructions:
 
 1. Create an API that will proxy all client requests to the appropriate GitHub endpoint. The
 following endpoints must be provided:
-• GET - /api/users?since={number}
+-  GET - /api/users?since={number}
 This endpoint must return a list of GitHub users and the link for the next page.
-• GET - /api/users/:username/details
+-  GET - /api/users/:username/details
 This endpoint must return the details of a GitHub user
-• GET - /api/users/:username/repos
+-  GET - /api/users/:username/repos
 This endpoint must return a list with all user repositories
+
 2. (optional) Create tests for your application covering all endpoints.
+
 3. Create a screen that will list all users from GitHub and will display their Id and Login.
 Remember, you can’t list all users at once you will have to use pagination.
+
 4. Using the screen created in step 3, create a new screen that will display the details of a user
 (Id, Login, Profile URL and the date of the login creation).
+
 5. On the details screen (created on step 4) add a table that will display the public repositories
 of the user, this table must contain the id, name, and URL to the repository
 
