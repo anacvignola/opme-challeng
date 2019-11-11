@@ -48,7 +48,7 @@ $ yarn install
 $ yarn start
 ```
 
-It is also available on Heroku [here](link).
+It is also available on Heroku [here](https://opme-challenge.herokuapp.com/).
 
 [nodejs]: https://nodejs.org/
 [yarn]: https://yarnpkg.com/
