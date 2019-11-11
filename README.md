@@ -1,68 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository was created to solve the challenge of a junior developer vacancy ReactJS.
 
-## Available Scripts
+Challenge Instructions:
 
-In the project directory, you can run:
+1. Create an API that will proxy all client requests to the appropriate GitHub endpoint. The
+following endpoints must be provided:
+• GET - /api/users?since={number}
+This endpoint must return a list of GitHub users and the link for the next page.
+• GET - /api/users/:username/details
+This endpoint must return the details of a GitHub user
+• GET - /api/users/:username/repos
+This endpoint must return a list with all user repositories
+2. (optional) Create tests for your application covering all endpoints.
+3. Create a screen that will list all users from GitHub and will display their Id and Login.
+Remember, you can’t list all users at once you will have to use pagination.
+4. Using the screen created in step 3, create a new screen that will display the details of a user
+(Id, Login, Profile URL and the date of the login creation).
+5. On the details screen (created on step 4) add a table that will display the public repositories
+of the user, this table must contain the id, name, and URL to the repository
 
-### `yarn start`
+## :rocket: Technologies
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project was developed with the following technologies:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+-  [Node.js][nodejs]
+-  [Express](https://expressjs.com/)
+-  [ReactJS](https://reactjs.org/)
+-  [React Router v4](https://github.com/ReactTraining/react-router)
+-  [styled-components](https://www.styled-components.com/)
+-  [axios](https://github.com/axios/axios)
+-  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
-### `yarn test`
+## :information_source: How To Use
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js][nodejs] or higher + [Yarn][yarn] or higher installed on your computer. From your command line:
 
-### `yarn build`
+```bash
+# Clone this repository
+$ git clone https://github.com/anacvignola/opme-challenge
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Go into the repository
+$ cd opme-challenge
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Install dependencies
+$ yarn install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Start the backend server
+$ yarn start
+```
 
-### `yarn eject`
+It is also available on Heroku [here](link).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[nodejs]: https://nodejs.org/
+[yarn]: https://yarnpkg.com/
+[vc]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
