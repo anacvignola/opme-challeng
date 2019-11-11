@@ -27,7 +27,6 @@ of the user, this table must contain the id, name, and URL to the repository
 This project was developed with the following technologies:
 
 -  [Node.js][nodejs]
--  [Express](https://expressjs.com/)
 -  [ReactJS](https://reactjs.org/)
 -  [React Router v4](https://github.com/ReactTraining/react-router)
 -  [styled-components](https://www.styled-components.com/)
